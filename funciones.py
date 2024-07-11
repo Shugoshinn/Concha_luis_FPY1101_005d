@@ -47,7 +47,7 @@ def ver_estadisticas():
 
 def reporte_sueldos():
     with open ("x", newline= ".csv")as archivo:
-        escritor = archivo
+        escritor = archivo.writable
     print("Nombre empleado",           "Sueldo Base",            "Descuento Salud",            "Deescuento AFP",             "Sueldo líquido")
     print(trabajadores,                  sueldos,                   sueldos*0.7,                sueldos*0.12,                 sueldos-sueldos*0.7-sueldos*0.12)
     print(trabajadores,                  sueldos,                   sueldos*0.7,                sueldos*0.12,                 sueldos-sueldos*0.7-sueldos*0.12)  
